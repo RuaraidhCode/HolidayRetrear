@@ -1,0 +1,40 @@
+.testimonials-section {
+    padding: 70px;
+    background: linear-gradient(to right, #f5f5f5, #e8e8e8);
+    text-align: center;
+  }
+  
+  .testimonials-carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 30px;
+  }
+  
+  .testimonial {
+    min-width: 300px;
+    padding: 20px;
+  }
+
+  .testimonial-title {
+    text-align: left;
+    font-family: 'Shadows Into Light Two', cursive;
+    font-weight: bold;
+    font-size: 3rem;
+    color: #b0843e;
+    margin-bottom: 30px;
+  }
+  
+  .quote {
+    font-style: italic;
+    color: #555;
+    font-size: 1.2rem;
+    font-family: 'Merriweather', serif; /* Elegant serif font */
+    line-height: 1.8; /* Increased line spacing for better readability */
+  }
+  
+  .author {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  

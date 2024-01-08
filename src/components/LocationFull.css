@@ -1,0 +1,63 @@
+/* LocationFull.css */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 70px;
+    background: linear-gradient(to right, #f5f5f5, #e8e8e8);
+  }
+  
+  .text-section {
+    flex: 1;
+    text-align: left;
+    padding-right: 20px; /* Spacing between text and map */
+  }
+  
+  .map-section {
+    flex: 1;
+    height: 500px; /* Adjust as needed */
+  }
+  
+  .directions {
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .directions h2 {
+    font-size: 2rem; /* Larger font size for the main heading */
+    margin-bottom: 30px; /* Adds more space below the heading */
+    color: #333; /* Optional: dark color for better readability */
+  }
+  
+  .directions h3 {
+    color: #333;
+    margin-top: 30px; /* More space above each sub-heading */
+    margin-bottom: 15px; /* More space below each sub-heading */
+    font-size: 1.5rem; /* Slightly larger font size for sub-headings */
+  }
+  
+  .directions p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6; /* Improved line spacing for readability */
+    margin-bottom: 20px; /* Adds space below each paragraph */
+  }
+  
+
+  /* Responsive Design for smaller screens */
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .map-section {
+      width: 100%;
+      order: -1; /* Map appears above the text on smaller screens */
+    }
+  
+    .text-section {
+      padding-right: 0; /* Remove padding on smaller screens */
+    }
+  }
+  

@@ -1,0 +1,82 @@
+.gallery-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 4rem;
+  background: linear-gradient(to right, #f5f5f5, #e8e8e8);
+}
+
+.gallery {
+  flex: 3; /* Adjust as necessary for the gallery size */
+  width: 100%; /* Gallery takes full width */
+}
+
+.gallery-text {
+  flex: 1; /* Adjust the size of the text area */
+  padding-left: 20px; /* Space between gallery and text */
+  text-align: left;
+}
+
+.gallery-text h2 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.gallery-text {
+  flex: 1; /* Adjust the size of the text area */
+  padding-left: 20px; /* Space between gallery and text */
+  text-align: left;
+}
+
+.row {
+  display: flex;
+  justify-content: stretch; /* Stretch row items to fill the container */
+  margin-bottom: 20px;
+}
+
+.row img {
+  flex-grow: 1; /* Allow images to grow and fill the container */
+  width: auto; /* Adjust width automatically */
+  height: auto; /* Adjust height automatically */
+  object-fit: cover; /* Maintain aspect ratio */
+  margin: 0 10px; /* Optional: for spacing between images */
+}
+
+/* Style for the first row of images */
+.row:first-child img {
+  margin: 0 10px;
+  width: calc(31.25% - 20px); /* Increased from 25% to 31.25% */
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* Style for the second row of images */
+.row:last-child img {
+  margin: 0 10px;
+  width: calc(20.833% - 20px); /* Increased from 16.666% to 20.833% */
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .gallery-container {
+    flex-direction: column;
+  }
+
+  .gallery-text {
+    padding-left: 0;
+    padding-top: 20px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .row img {
+    margin-bottom: 10px;
+    width: 60%; /* Adjusted for smaller screens */
+    border-radius: 10px; /* Adjusted border radius for smaller screens */
+  }
+}

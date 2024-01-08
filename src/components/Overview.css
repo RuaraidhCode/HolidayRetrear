@@ -1,0 +1,20 @@
+.overview-wrapper {
+    padding: 120px 15%;
+    background: linear-gradient(to right, #f5f5f5, #e8e8e8);
+}
+
+.title {
+    font-family: 'Shadows Into Light Two', cursive;
+    font-weight: bold;
+    font-size: 3rem;
+    color: #b0843e;
+}
+
+.overview-text{
+    margin-top: 50px;
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+    line-height: 45px;
+    font-size: 24px;
+    color: #4a4a49;
+}
