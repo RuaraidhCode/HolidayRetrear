@@ -11,7 +11,7 @@ import Stay from './components/pages/Stay';
 function App() {
   return (
     <>
-      <Router>
+      <Router basename="/HolidayRetreat">
         <Navbar />
         <Routes>
           <Route path='/' exact element={<Home />} />
