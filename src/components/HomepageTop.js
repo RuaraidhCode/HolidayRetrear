@@ -6,13 +6,13 @@ import { Link } from 'react-router-dom';
 
 function HomepageTop() {
   const images = [
-    '/HolidayRetreat/images/processed (46).jpeg',
-    '/HolidayRetreat/improved-images/balgonie(5).jpeg',
-    '/HolidayRetreat/images/processed (42).jpeg',
-    '/HolidayRetreat/improved-images/balgonie(1) copy.jpeg',
-    '/HolidayRetreat/improved-images/balgonie(2).jpeg',
-    '/HolidayRetreat/images/processed (44).jpeg',
-    '//HolidayRetreatimages/processed (46).jpeg',
+    process.env.PUBLIC_URL + '/images/processed (46).jpeg',
+    process.env.PUBLIC_URL + '/improved-images/balgonie(5).jpeg',
+    process.env.PUBLIC_URL + '/images/processed (42).jpeg',
+    process.env.PUBLIC_URL + '/improved-images/balgonie(1) copy.jpeg',
+    process.env.PUBLIC_URL + '/improved-images/balgonie(2).jpeg',
+    process.env.PUBLIC_URL + '/images/processed (44).jpeg',
+    process.env.PUBLIC_URL + '/images/processed (46).jpeg',
   ];
 
   const [currentImage, setCurrentImage] = useState(0);
