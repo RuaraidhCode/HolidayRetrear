@@ -9,13 +9,13 @@ function Cards() {
         <div className='gallery-container'>
             <div className="gallery">
                 <div className="row">
-                    <img src="images/processed (7).jpeg" alt="Gallery Item" />
-                    <img src="images/processed (20).jpeg" alt="Gallery Item" />
+                <img src={process.env.PUBLIC_URL + "/images/processed (7).jpeg"} alt="Gallery Item" />
+                    <img src={process.env.PUBLIC_URL + "images/processed (20).jpeg"} alt="Gallery Item" />
                 </div>
                 <div className="row">
-                    <img src="images/processed (8).jpeg" alt="Gallery Item" />
-                    <img src="images/processed (40).jpeg" alt="Gallery Item" />
-                    <img src="images/processed (15).jpeg" alt="Gallery Item" />
+                    <img src={process.env.PUBLIC_URL + "images/processed (8).jpeg"} alt="Gallery Item" />
+                    <img src={process.env.PUBLIC_URL + "images/processed (40).jpeg"} alt="Gallery Item" />
+                    <img src={process.env.PUBLIC_URL + "images/processed (15).jpeg"} alt="Gallery Item" />
                 </div>
             </div>
             <div className="gallery-text">

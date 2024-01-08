@@ -13,62 +13,62 @@ const GalleryTest = () => {
 
 const images = [
    {
-      src: "/improved-images/balgonie(1).jpeg",
+      src: process.env.PUBLIC_URL + "/improved-images/balgonie(1).jpeg",
       width: 320,
       height: 174,
    },
    {
-      src: "/improved-images/balgonie(2).jpeg",
+      src: process.env.PUBLIC_URL + "/improved-images/balgonie(2).jpeg",
       width: 320,
       height: 212,
    },
    {
-      src: "/improved-images/balgonie(3).jpeg",
+      src: process.env.PUBLIC_URL + "/improved-images/balgonie(3).jpeg",
       width: 320,
       height: 212,
    },
    {
-    src: "/improved-images/balgonie(4).jpeg",
+    src: process.env.PUBLIC_URL + "/improved-images/balgonie(4).jpeg",
     width: 320,
     height: 174,
   },
   {
-    src: "/improved-images/balgonie(5).jpeg",
+    src: process.env.PUBLIC_URL + "/improved-images/balgonie(5).jpeg",
     width: 320,
     height: 212,
   },
   {
-    src: "/improved-images/balgonie(6).jpeg",
+    src: process.env.PUBLIC_URL + "/improved-images/balgonie(6).jpeg",
     width: 320,
     height: 212,
   },
   {
-    src: "/improved-images/balgonie(7).jpeg",
+    src: process.env.PUBLIC_URL + "/improved-images/balgonie(7).jpeg",
     width: 320,
     height: 213,
   },
   {
-    src: "/improved-images/balgonie(8).jpeg",
+    src: process.env.PUBLIC_URL + "/improved-images/balgonie(8).jpeg",
     width: 320,
     height: 183,
   },
   {
-    src: "/improved-images/balgonie(9).jpeg",
+    src: process.env.PUBLIC_URL + "/improved-images/balgonie(9).jpeg",
     width: 240,
     height: 320,
   },
   {
-    src: "/improved-images/balgonie(10).jpeg",
+    src: process.env.PUBLIC_URL + "/improved-images/balgonie(10).jpeg",
     width: 320,
     height: 190,
   },
   {
-    src: "/improved-images/balgonie(11).jpeg",
+    src: process.env.PUBLIC_URL + "/improved-images/balgonie(11).jpeg",
     width: 320,
     height: 148,
   },
   {
-    src: "/improved-images/balgonie(12).jpeg",
+    src: process.env.PUBLIC_URL + "/improved-images/balgonie(12).jpeg",
     width: 320,
     height: 213,
   },

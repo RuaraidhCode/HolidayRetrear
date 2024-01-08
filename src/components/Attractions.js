@@ -5,27 +5,27 @@ const attractions = [
   {
     name: "West Linton Village",
     description: "A charming village with historical sites and a quaint atmosphere, perfect for leisurely exploration.",
-    imageUrl: "/improved-images/west-linton.jpeg", // Replace with actual image path
+    imageUrl: process.env.PUBLIC_URL + "/improved-images/west-linton.jpeg", // Replace with actual image path
   },
   {
     name: "Pentland Hills",
     description: "Breathtaking natural beauty ideal for hiking, photography, and outdoor adventures.",
-    imageUrl: "/improved-images/pentlands(1).jpeg", // Replace with actual image path
+    imageUrl: process.env.PUBLIC_URL + "/improved-images/pentlands(1).jpeg", // Replace with actual image path
   },
   {
     name: "West Linton Golf Club",
     description: "Offering a beautiful golfing experience amidst well-maintained greens and scenic surroundings.",
-    imageUrl: "/improved-images/golf.jpeg", // Replace with an actual image of the golf club
+    imageUrl: process.env.PUBLIC_URL + "/improved-images/golf.jpeg", // Replace with an actual image of the golf club
   },
   {
     name: "Horse Riding Adventures",
     description: "Explore the breathtaking landscapes of West Linton on horseback, suitable for all skill levels.",
-    imageUrl: "/improved-images/horseriding.jpeg", // Replace with an actual image of horse riding
+    imageUrl: process.env.PUBLIC_URL + "/improved-images/horseriding.jpeg", // Replace with an actual image of horse riding
   },
   {
     name: "Edinburgh Fringe Festival",
     description: "Immerse yourself in the world’s largest arts festival, featuring thousands of performers in Scotland's capital.",
-    imageUrl: "/improved-images/fringe.jpeg", // Replace with an actual image of the Edinburgh Fringe
+    imageUrl: process.env.PUBLIC_URL + "/improved-images/fringe.jpeg", // Replace with an actual image of the Edinburgh Fringe
   },
   // Add more attractions as needed
 ];
