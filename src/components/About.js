@@ -6,7 +6,7 @@ function About() {
     <div className='about-container'>
       <div className='sections-wrapper'>
         <div className='section-left'>
-          <img className='section-img-1' src="/images/processed (7).jpeg" alt="Image" />
+          <img className='section-img-1' src={process.env.PUBLIC_URL + "/images/processed (7).jpeg"} alt="Image" />
         </div>
         <div className='section-right'>
           <h1 className='section-text'>The Property</h1>
@@ -23,13 +23,13 @@ Outdoors, the large garden is caringly tended and short walks to the nearby rive
 </p>    
         </div>
         <div className='section-right'>
-          <img className='section-img-2' src="/improved-images/balgonie(5).jpeg" alt="Image" />
+          <img className='section-img-2' src={process.env.PUBLIC_URL + "/improved-images/balgonie(5).jpeg"} alt="Image" />
         </div>
       </div>
 
       <div className='sections-wrapper'>
         <div className='section-left'>
-          <img className='section-img-2' src="/improved-images/pentlands(1).jpeg" alt="Image" />
+          <img className='section-img-2' src={process.env.PUBLIC_URL + "/improved-images/pentlands(1).jpeg"} alt="Image" />
         </div>
         <div className='section-right'>
         <h1 className='section-text'>Location</h1>
@@ -45,13 +45,13 @@ Outdoors, the large garden is caringly tended and short walks to the nearby rive
           </p>
         </div>
         <div className='section-right'>
-          <img className='section-img-2' src="/improved-images/horseriding.jpeg" alt="Image" />
+          <img className='section-img-2' src={process.env.PUBLIC_URL + "/improved-images/horseriding.jpeg"} alt="Image" />
         </div>
       </div>
 
       <div className='sections-wrapper'>
         <div className='section-left'>
-          <img className='section-img-2' src="/improved-images/edinburgh.jpeg" alt="Image" />
+          <img className='section-img-2' src={process.env.PUBLIC_URL + "/improved-images/edinburgh.jpeg"} alt="Image" />
         </div>
         <div className='section-right'>
         <p className='property-text-4'>
