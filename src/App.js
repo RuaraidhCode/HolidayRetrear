@@ -11,7 +11,7 @@ import Stay from './components/pages/Stay';
 function App() {
   return (
     <>
-      <Router basename="/HolidayRetreat">
+      <Router basename={process.env.REACT_APP_BASENAME}>
         <Navbar />
         <Routes>
           <Route path='/' exact element={<Home />} />
