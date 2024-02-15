@@ -6,13 +6,13 @@ import { Link } from 'react-router-dom';
 
 function HomepageTop() {
   const images = [
-    process.env.PUBLIC_URL + '/images/processed (46).jpeg',
+    process.env.PUBLIC_URL + '/improved-images/balgonie(16).jpeg',
     process.env.PUBLIC_URL + '/improved-images/balgonie(5).jpeg',
-    process.env.PUBLIC_URL + '/images/processed (42).jpeg',
+    process.env.PUBLIC_URL + '/improved-images/balgonie(15).jpeg',
     process.env.PUBLIC_URL + '/improved-images/balgonie(1) copy.jpeg',
     process.env.PUBLIC_URL + '/improved-images/balgonie(2).jpeg',
     process.env.PUBLIC_URL + '/images/processed (44).jpeg',
-    process.env.PUBLIC_URL + '/images/processed (46).jpeg',
+    process.env.PUBLIC_URL + '/improved-images/balgonie(16).jpeg',
   ];
 
   const [currentImage, setCurrentImage] = useState(0);
@@ -42,17 +42,6 @@ function HomepageTop() {
   
     return () => clearInterval(interval);
   }, [currentImage]);
-  
-  /*
- <Button
-          linkTo='https://www.holidaycottages.co.uk/cottage/81467-balgonie-retreat'
-          className='btns'
-          buttonStyle='btn--outline'
-          buttonSize='btn--large'
-        >
-          MAKE A BOOKING
-        </Button>
-  */
 
   return (
     <div className='hero-container'>
@@ -64,7 +53,7 @@ function HomepageTop() {
     alt='Balgonie Retreat'
   />
 ))}
-      <h1 className='home-heading'>BALGONIE RETREAT</h1>
+        <h1 className='home-heading'>BALGONIE RETREAT</h1>
       <p>Set in the beautiful countryside of the Scottish Borders</p>
       <div className='hero-btns'>
        

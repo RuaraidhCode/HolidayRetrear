@@ -19,8 +19,7 @@ function Cards() {
                 </div>
             </div>
             <div className="gallery-text">
-                <h2>Gallery Title or Header</h2>
-                <p>View all images of the house here!</p>
+                <h2>View Gallery</h2>
                 {/* Add more text or elements as needed */}
             </div>
         </div>

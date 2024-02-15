@@ -10,17 +10,59 @@
     justify-content: space-between;
     width: 100%;
     max-width: 1300px;
-    margin-top: 20px; /* Add margin for spacing */
+    margin-top: 20px;
+    margin-bottom: 60px;
+    border: 1px;
+    align-items: center;
   }
   
-  .section-left {
+  .section-left-1 {
     flex-basis: 45%; /* Adjust the percentage to control the width of left section */
     padding: 10px;
     text-align: center;
-  
+  }
+  .section-left-2 {
+    flex-basis: 45%; /* Adjust the percentage to control the width of left section */
+    padding: 10px;
+    text-align: center;
+  }
+  .section-left-3 {
+    flex-basis: 45%; /* Adjust the percentage to control the width of left section */
+    padding: 10px;
+    text-align: center;
+  }
+  .section-left-4 {
+    flex-basis: 45%; /* Adjust the percentage to control the width of left section */
+    padding: 10px;
+    text-align: center;
+  }
+  .section-left-5 {
+    flex-basis: 45%; /* Adjust the percentage to control the width of left section */
+    padding: 10px;
+    text-align: center;
   }
   
-  .section-right {
+  .section-right-1 {
+    flex-basis: 45%; /* Adjust the percentage to control the width of right section */
+    padding: 10px;
+    text-align: center;
+  }
+  .section-right-2 {
+    flex-basis: 45%; /* Adjust the percentage to control the width of right section */
+    padding: 10px;
+    text-align: center;
+  }
+  .section-right-3 {
+    flex-basis: 45%; /* Adjust the percentage to control the width of right section */
+    padding: 10px;
+    text-align: center;
+  }
+  .section-right-4 {
+    flex-basis: 45%; /* Adjust the percentage to control the width of right section */
+    padding: 10px;
+    text-align: center;
+  }
+  .section-right-5 {
     flex-basis: 45%; /* Adjust the percentage to control the width of right section */
     padding: 10px;
     text-align: center;
@@ -29,15 +71,15 @@
   .section-img-1 {
     max-width: 100%;
     height: auto;
+    min-width: 565px;
     border-radius: 10px;
-    margin-top: 80px;
   }
 
   .section-img-2 {
     max-width: 100%;
     height: auto;
+    min-width: 565px;
     border-radius: 10px;
-    margin-top: 80px;
   }
   
   .cards__item {
@@ -51,38 +93,116 @@
     font-family: 'Shadows Into Light Two', cursive;
     font-weight: bold;
     font-size: 3rem;
-    margin-bottom: 10px;
-    margin-top: 40px;
+    margin-bottom: 20px;
   }
 
   .property-text-1 {
-    margin-top: 50px;
     font-family: 'Lato', sans-serif;
     font-weight: lighter;
     line-height: 35px;
     font-size: 1.25rem;
+    margin-bottom: 0px;
   }
 
   .property-text-2 {
-    margin-top: 160px;
     font-family: 'Lato', sans-serif;
     font-weight: lighter;
     line-height: 35px;
     font-size: 1.25rem;
+    margin-bottom: 0px;
   }
 
   .property-text-3 {
-    margin-top: 40px;
     font-family: 'Lato', sans-serif;
     font-weight: lighter;
     line-height: 35px;
     font-size: 1.25rem;
+    margin-bottom: 0px;
   }
 
   .property-text-4 {
-    margin-top: 160px;
     font-family: 'Lato', sans-serif;
     font-weight: lighter;
     line-height: 35px;
     font-size: 1.25rem;
+    margin-bottom: 0px;
+  }
+
+
+  @media (max-width: 1134px) {
+
+    .section-text {
+      font-size: 2.5rem;
+    }
+  
+    .section-img-1 {
+      min-width: 400px;
+    }
+  
+
+    .property-text-1 {
+      font-size: 1rem;
+    }
+  
+    .property-text-2 {
+      font-size: 1rem;
+    }
+  
+    .property-text-3 {
+      font-size: 1rem;
+    }
+  
+    .property-text-4 {
+      font-size: 1rem;
+    }
+  
+    
+  }
+  @media (max-width: 776px) {
+    .sections-wrapper {
+      flex-direction: column;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .section-img-1 {
+      min-width: 350px;
+      width: 90%;
+    }
+  
+    .section-text {
+      margin-top: 40px;
+    }
+
+    .section-left-1 {
+      order: 2;
+    }
+  
+    .section-right-1 {
+      order: 1; 
+    }
+
+    .section-left-2 {
+      order: 1;
+    }
+  
+    .section-right-2 {
+      order: 2; 
+    }
+
+    .section-left-3 {
+      order: 2;
+    }
+  
+    .section-right-3 {
+      order: 1; 
+    }
+
+    .section-left-5 {
+      order: 2;
+    }
+  
+    .section-right-5 {
+      order: 1; 
+    }
   }

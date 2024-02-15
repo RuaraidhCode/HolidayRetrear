@@ -9,6 +9,7 @@ import Activities from '../Activities';
 import Attractions from '../Attractions';
 import LocationFull from '../LocationFull';
 import Testimonials from '../Testimonials';
+import Booking from '../Booking';
 
 
 function Home() {
@@ -18,7 +19,7 @@ function Home() {
       <Overview />
       <Cards />
      <Testimonials />
-      <LocationFull />
+     <Booking />
       <Footer />
     </>
   );

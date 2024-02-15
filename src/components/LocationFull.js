@@ -18,7 +18,7 @@ L.Marker.prototype.options.icon = DefaultIcon;
   return (
     <div className="container">
       <div className="text-section">
-        <h2>How to Find Us</h2>
+        <h2 className='title'>How to Find Us</h2>
         <div className="directions">
         <h3>Arriving by Car from the South</h3>
         <p>Arriving by car from the south: take M6/M74 Junction 13, Abington, (signposted Edinburgh). After 23 miles you will arrive in West Linton. Turn right into the village and drive through, bearing left on the B7059 for approx. 1 mile. Balgonie Retreat is situated next on the right after Broomlee Centre.</p>

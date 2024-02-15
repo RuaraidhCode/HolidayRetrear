@@ -9,7 +9,7 @@ const activitiesData = [
   },
   {
     name: "Sauna",
-    description: "Relax in a cozy sauna after a long day.",
+    description: "Relax in a cosy sauna after a long day.",
     imageUrl: process.env.PUBLIC_URL + "/improved-images/sauna.jpeg", // Replace with actual image path
   },
   {
