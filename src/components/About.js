@@ -46,7 +46,7 @@ Outdoors, the large garden is caringly tended and short walks to the nearby rive
 </p>    
         </div>
         <div className='section-right-2'>
-          <img className='section-img-1' src={process.env.PUBLIC_URL + "/improved-images/balgonie(5).jpeg"} alt="Image" />
+          <img className='section-img-1' src={process.env.PUBLIC_URL + "/improved-images/balgonie(5) copy.jpeg"} alt="Image" />
         </div>
         </motion.div>
 

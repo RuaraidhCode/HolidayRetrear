@@ -23,6 +23,10 @@
     margin-bottom: 30px;
 }
 
+.mobile-title-container {
+    display: none;
+}
+
 .summary-columns {
     display: flex;
     justify-content: space-between;
@@ -64,6 +68,10 @@
 @media (max-width: 768px) {
     .summary-container {
         margin: 10px;
+    }
+
+    .mobile-title-container {
+        display: flex;
     }
 
     .summary-title {
