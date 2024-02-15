@@ -38,3 +38,15 @@
     color: #333;
   }
   
+  @media screen and (max-width: 768px) {
+    .testimonial-title {
+      font-size: 2.5rem;
+      text-align: center;
+    }
+
+    .quote {
+      font-size: 1rem;
+      line-height: 1.8; /* Increased line spacing for better readability */
+    }
+  }
+  

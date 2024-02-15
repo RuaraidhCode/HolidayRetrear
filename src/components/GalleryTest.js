@@ -1,113 +1,64 @@
 import React, { useState } from "react";
-import { Gallery } from "react-grid-gallery";
-import Lightbox from "yet-another-react-lightbox";
-import "yet-another-react-lightbox/styles.css";
-import ImageGallery from 'react-image-gallery';
-import 'react-image-gallery/styles/css/image-gallery.css';
+import { motion, AnimatePresence } from "framer-motion";
 import './GalleryTest.css';
 
-
 const GalleryTest = () => {
-  
-  const [index, setIndex] = useState(-1);
+  const [selectedImg, setSelectedImg] = useState(null);
+  const [imageBounds, setImageBounds] = useState(null);
 
-const images = [
-   {
-      src: process.env.PUBLIC_URL + "/improved-images/balgonie(1).jpeg",
-      width: 320,
-      height: 174,
-   },
-   {
-      src: process.env.PUBLIC_URL + "/improved-images/balgonie(2).jpeg",
-      width: 320,
-      height: 212,
-   },
-   {
-      src: process.env.PUBLIC_URL + "/improved-images/balgonie(3).jpeg",
-      width: 320,
-      height: 212,
-   },
-   {
-    src: process.env.PUBLIC_URL + "/improved-images/balgonie(4).jpeg",
-    width: 320,
-    height: 174,
-  },
-  {
-    src: process.env.PUBLIC_URL + "/improved-images/balgonie(5).jpeg",
-    width: 320,
-    height: 212,
-  },
-  {
-    src: process.env.PUBLIC_URL + "/improved-images/balgonie(6).jpeg",
-    width: 320,
-    height: 212,
-  },
-  {
-    src: process.env.PUBLIC_URL + "/improved-images/balgonie(7).jpeg",
-    width: 320,
-    height: 213,
-  },
-  {
-    src: process.env.PUBLIC_URL + "/improved-images/balgonie(8).jpeg",
-    width: 320,
-    height: 183,
-  },
-  {
-    src: process.env.PUBLIC_URL + "/improved-images/balgonie(9).jpeg",
-    width: 240,
-    height: 320,
-  },
-  {
-    src: process.env.PUBLIC_URL + "/improved-images/balgonie(10).jpeg",
-    width: 320,
-    height: 190,
-  },
-  {
-    src: process.env.PUBLIC_URL + "/improved-images/balgonie(11).jpeg",
-    width: 320,
-    height: 148,
-  },
-  {
-    src: process.env.PUBLIC_URL + "/improved-images/balgonie(12).jpeg",
-    width: 320,
-    height: 213,
-  },
-   
-];
- 
-
-const currentImage = images[index];
-  const nextIndex = (index + 1) % images.length;
-  const nextImage = images[nextIndex] || currentImage;
-  const prevIndex = (index + images.length - 1) % images.length;
-  const prevImage = images[prevIndex] || currentImage;
-
-  const handleClick = (index) => setIndex(index);
-  const handleClose = () => setIndex(-1);
-  const handleMovePrev = () => setIndex(prevIndex);
-  const handleMoveNext = () => setIndex(nextIndex);
-
+  const selectImage = (src, bounds) => {
+    setImageBounds(bounds);
+    setSelectedImg(src);
+  };
 
   return (
-      <div>
-      <Gallery
-        images={images}
-        onClick={handleClick}
-        enableImageSelection={false}
-      />
-      {index >= 0 && (
-        <Lightbox
-          mainSrc={currentImage.src}
-          imageTitle={currentImage.caption}
-          nextSrc={nextImage.src}
-          prevSrc={prevImage.src}
-          onCloseRequest={handleClose}
-          onMovePrevRequest={handleMovePrev}
-          onMoveNextRequest={handleMoveNext}
-        />
-      )}
-      </div>
-  ); 
+    <div className="gallery__container">
+      {Array.from({ length: 24 }, (_, i) => (
+        <div key={i} className="gallery-item" onClick={(e) => selectImage(process.env.PUBLIC_URL + `/improved-images/balgonie(${i + 1}).jpeg`, e.target.getBoundingClientRect())}>
+          <motion.img 
+            src={process.env.PUBLIC_URL + `/improved-images/balgonie(${i + 1}).jpeg`} 
+            alt={`Balgonie ${i + 1}`}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+          />
+        </div>
+      ))}
+      
+      <AnimatePresence>
+  {selectedImg && (
+    <motion.div 
+      className="backdrop"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      onClick={() => setSelectedImg(null)}
+    >
+     <motion.img 
+  src={selectedImg} 
+  alt="Enlarged"
+  className="enlarged-img"
+  initial={{
+    opacity: 0, // Start from transparent to smoothly transition in
+    x: imageBounds.left - (window.innerWidth / 2 - imageBounds.width / 2),
+    y: imageBounds.top - (window.innerHeight / 2 - imageBounds.height / 2),
+  }}
+  animate={{
+    x: 0,
+    y: 0,
+    opacity: 1
+  }}
+  exit={{ opacity: 0 }}
+  transition={{ type: "spring", stiffness: 100, damping: 15 }}
+  onClick={(e) => e.stopPropagation()}
+/>
+
+    </motion.div>
+  )}
+</AnimatePresence>
+
+    </div>
+  );
 };
 
 export default GalleryTest;
