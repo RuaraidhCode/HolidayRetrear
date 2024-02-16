@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/HolidayRetreat/static/css/main.598de50e.css",
-    "main.js": "/HolidayRetreat/static/js/main.df50f44d.js",
+    "main.css": "/HolidayRetreat/static/css/main.29bf80a2.css",
+    "main.js": "/HolidayRetreat/static/js/main.25eead22.js",
     "static/media/processed (1).jpeg": "/HolidayRetreat/static/media/processed (1).cec40b09648c6b68a1ad.jpeg",
     "static/media/processed (3).jpeg": "/HolidayRetreat/static/media/processed (3).eff291e3fde1c5bf2038.jpeg",
     "index.html": "/HolidayRetreat/index.html",
-    "main.598de50e.css.map": "/HolidayRetreat/static/css/main.598de50e.css.map",
-    "main.df50f44d.js.map": "/HolidayRetreat/static/js/main.df50f44d.js.map"
+    "main.29bf80a2.css.map": "/HolidayRetreat/static/css/main.29bf80a2.css.map",
+    "main.25eead22.js.map": "/HolidayRetreat/static/js/main.25eead22.js.map"
   },
   "entrypoints": [
-    "static/css/main.598de50e.css",
-    "static/js/main.df50f44d.js"
+    "static/css/main.29bf80a2.css",
+    "static/js/main.25eead22.js"
   ]
 }
